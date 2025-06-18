@@ -20,7 +20,7 @@ export const getCharactersID = async(id: string):Promise<Character_API> => {
         id: result[0].id,
         name: result[0].name,
         image: result[0].image ? result[0].image : "https://ordinaria-limonera.deno.dev/no-image.jpg?__frsh_c=34f676c81b05e1f573aa6867cbfe80be3288b355",
-        house: result[0].house,
+        house: result[0].house ? result[0].house : "Desconocida",
         alive: result[0].alive
     })
 }

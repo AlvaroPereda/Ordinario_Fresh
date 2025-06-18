@@ -11,7 +11,7 @@ const DetailCard:FunctionalComponent<Data> = (props) => {
         <div class="detail">
             <img src={props.character.image} alt={props.character.name} />
             <h2>
-                {props.character.name}
+                {props.character.name + " "}   
                 <Star id={props.character.id}/>
             </h2>
             <p>Casa: {props.character.house}</p>
