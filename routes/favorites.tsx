@@ -12,7 +12,7 @@ export const handler:Handlers = {
             const characters: Character_API[] = await Promise.all(value.map(async(e) => await getCharactersID(e)))
             return ctx.render(characters)
         }
-        return ctx.render()
+        return ctx.render([])
     }
 }
 
