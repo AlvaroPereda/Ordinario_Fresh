@@ -42,7 +42,7 @@ const Star:FunctionalComponent<Data> = (props) => {
     },[])
 
     return (
-        <span onClick={addFav} style={Fav ? "color: gold;cursor:pointer;" : "cursor:pointer"}>★</span>
+        <span onClick={addFav} class={Fav ? "star fav " : "star"}>★</span>
     )
 }
 
